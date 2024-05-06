@@ -9,7 +9,7 @@ const M: usize = 4;
 fn main() -> Result<()> {
     let metrics = Metrics::new();
 
-    println!("{:?}", metrics.snapshot());
+    println!("{}", metrics);
 
     for idx in 0..N {
         worker(idx, metrics.clone())?;
